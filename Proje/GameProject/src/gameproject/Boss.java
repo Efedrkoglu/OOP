@@ -11,7 +11,7 @@ package gameproject;
 public class Boss extends Enemy{
     
     public Boss() {
-        super("Hayalet Kral", 400, 60, 0, 0, 1);
+        super("Hayalet Kral", 350, 60, 0, 0, 1);
     }
 
     public Boss(String name, int hp, int dmg, int gold, int tp, int NUM) {
