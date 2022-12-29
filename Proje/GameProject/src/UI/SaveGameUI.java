@@ -69,14 +69,17 @@ public class SaveGameUI extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == slot1) {
             SaveFileManager.SaveGame(1, this.game);
+            JOptionPane.showMessageDialog(rootPane, "Oyun kaydedildi.");
         }
         
         if(e.getSource() == slot2) {
             SaveFileManager.SaveGame(2, this.game);
+            JOptionPane.showMessageDialog(rootPane, "Oyun kaydedildi.");
         }
         
         if(e.getSource() == slot3) {
             SaveFileManager.SaveGame(3, this.game);
+            JOptionPane.showMessageDialog(rootPane, "Oyun kaydedildi.");
         }
     }
     

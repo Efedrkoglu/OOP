@@ -36,7 +36,7 @@ public class CreatePlayerUI extends JFrame implements ActionListener{
     public JTextField getPlayerName() {
         if(PlayerName == null) {
             PlayerName = new JTextField();
-            PlayerName.setBounds(70,90,200,35);
+            PlayerName.setBounds(65,95,200,30);
         }
         return PlayerName;
     }

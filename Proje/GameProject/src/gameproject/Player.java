@@ -37,8 +37,6 @@ public class Player {
         this.sword2 = sword2;
         this.sword3 = sword3;
     }
-    
-    
 
     public int getHp() {
         return hp;

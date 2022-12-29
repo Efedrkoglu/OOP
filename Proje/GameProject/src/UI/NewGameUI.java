@@ -1,5 +1,6 @@
 package UI;
 
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
@@ -9,20 +10,32 @@ import javax.swing.*;
  * @author Efe
  */
 public class NewGameUI extends JFrame implements ActionListener{
+    
+    private JLabel title;
     private JButton btn1, btn2;
     
     public NewGameUI() {
-        this.setTitle("New Game");
+        this.setTitle("Game");
         this.setSize(300,300);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
         this.setLocationRelativeTo(null);
         this.setLayout(null);
         
+        this.add(getTitleLabel());
         this.add(getBtn1());
         this.add(getBtn2());
         
         this.setVisible(true);
+    }
+    
+    public JLabel getTitleLabel() {
+        if(title == null) {
+            title = new JLabel("Kale Oyunu");
+            title.setFont(new Font("Times New Roman",Font.PLAIN,26));
+            title.setBounds(85,40,150,40);
+        }
+        return title;
     }
 
     public JButton getBtn1() {

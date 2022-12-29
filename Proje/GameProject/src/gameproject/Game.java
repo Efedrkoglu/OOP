@@ -13,7 +13,6 @@ public class Game {
     private int pot;
     private int pot2;
     private int bomb;
-    private int floor = 3;
     private int currentFloor;
     private int currentRoom;   
     
@@ -78,20 +77,6 @@ public class Game {
                 this.enemy = new Ghost(count);
                 break;
         }
-        /*switch(type) {
-            case 1-> {
-                count = rnd.nextInt(5) + 1;
-                this.enemy = new Spider(count);
-            }
-            case 2-> {
-                count = rnd.nextInt(5) + 1;
-                this.enemy = new Skeleton(count);
-            }
-            case 3-> {
-                count = rnd.nextInt(5) + 1;
-                this.enemy = new Ghost(count);
-            }
-        }*/
     }
     
     public void GenerateBoss() {
